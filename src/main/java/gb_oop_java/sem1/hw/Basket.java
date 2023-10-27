@@ -14,11 +14,11 @@ public class Basket {
     public Basket() {
     }
 
-    protected void addProduct(Product product, Integer count){
+    public void addProduct(Product product, Integer count){
             myModules.addProduct((HashMap) arr, product, count);
     }
 
-    protected void delProduct(Product product, Integer count){
+    public void delProduct(Product product, Integer count){
         myModules.delProduct((HashMap) arr, product, count);
     }
 
