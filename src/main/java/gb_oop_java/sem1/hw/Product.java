@@ -13,10 +13,9 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Продукт: \n" +
-                "   Название - " + name + '\n' +
-                "   Рейтинг - " + rating + '\n' +
-                "   Цена - " + price + '\n';
+        return "Продукт - " + name +
+                ", рейтинг - " + rating +
+                ", цена - " + price;
     }
 
     public String getName() {
