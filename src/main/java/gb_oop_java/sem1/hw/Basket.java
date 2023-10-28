@@ -29,7 +29,6 @@ public class Basket {
     @Override
     public String toString() {
         return "Корзина номер " + num + "\n"+ arr.toString().replaceAll("^\\{|\\}$|", "").replaceAll("=", ", количество - ");
-                //.replaceAll("^\\[|\\]$|\\,", "");
     }
 }
 
