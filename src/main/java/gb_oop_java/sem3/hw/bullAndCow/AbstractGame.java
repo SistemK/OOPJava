@@ -43,7 +43,6 @@ public abstract class AbstractGame implements Game {
 
     @Override
     public Answer inputValue(String value) {
-        maxTry--;
         Integer countBull = 0;
         Integer countCow = 0;
         for (int i = 0; i < value.length(); i++) {
@@ -53,6 +52,7 @@ public abstract class AbstractGame implements Game {
                     countBull++;
                 }
             }
+            maxTry--;
         }
         if (countBull.equals(word.length())) {
             status = GameStatus.WIN;
